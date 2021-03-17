@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/textfield_bienvenue_prenom"
+        android:theme="@style/EditTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/textview_favoris_nom_valeur"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/dialog_profil_prenom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <EditText
+        android:id="@+id/dialog_profil_prenom"
+        android:theme="@style/EditTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/textview_favoris_prenom_valeur"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textfield_bienvenue_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textfield_bienvenue_prenom" />
+
+    <EditText
+        android:id="@+id/textfield_bienvenue_email"
+        android:theme="@style/EditTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/textview_favoris_email_valeur"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/textfield_bienvenue_telephone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_profil_prenom" />
+
+    <EditText
+        android:id="@+id/textfield_bienvenue_telephone"
+        android:theme="@style/EditTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/textview_favoris_telephone_valeur"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textfield_bienvenue_email" />
+</android.support.constraint.ConstraintLayout>

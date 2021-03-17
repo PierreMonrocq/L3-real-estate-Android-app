@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textview_deposer_bien_nb_piece"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/textview_deposer_bien_nb_piece"
+        android:textColor="@color/colorParagraphe"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_deposer_bien_caracs" />
+
+    <EditText
+        android:id="@+id/edittext_deposer_bien_select_nb_piece"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:hint="@string/edittext_deposer_bien_nbpiecehint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textview_deposer_bien_nb_piece"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textview_deposer_bien_nb_piece" />
+
+    <TextView
+        android:id="@+id/textview_deposer_bien_prix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/textview_deposer_bien_prix"
+        android:textColor="@color/colorParagraphe"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_deposer_bien_code" />
+
+        <EditText
+            android:id="@+id/edittext_deposer_bien_select_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="@string/edittext_deposer_bien_printhint"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textview_deposer_bien_prix"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textview_deposer_bien_prix" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/button_deposer_bien_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:paddingBottom="16dp"
+            app:backgroundTint="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_deposer_bien_add_photo"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+        <TextView
+            android:id="@+id/textview_deposer_bien_add_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/textview_deposer_bien_ajouterphoto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edittext_deposer_bien_desc" />
+
+        <ScrollView
+            android:id="@+id/container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/button_ajouter_bien"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_deposer_bien_camera"
+            app:layout_constraintVertical_bias="0.651">
+
+            <unicaen.tp.programmationandroid.activities.affichage.FlowLayout
+                android:id="@+id/flowLayout_in_scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </ScrollView>
+
+    <Button
+        android:id="@+id/button_ajouter_bien"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="lancerActiviteDeposer"
+        android:background="@color/colorPrimary"
+        android:elevation="3dp"
+        android:textColor="@color/colorBackground1"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/button_deposer_bien_confirmAdd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_deposer_bien_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/deposer_bien_title"
+        android:textColor="@color/colorParagraphe"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edittext_deposer_bien_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="@string/edit_text_deposer_bien"
+            android:inputType="text|textCapSentences"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textview_deposer_bien_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textview_deposer_bien_title" />
+
+    <TextView
+        android:id="@+id/textview_deposer_bien_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/textview_deposer_bien_desc"
+        android:textColor="@color/colorParagraphe"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_deposer_bien_prix" />
+
+    <EditText
+        android:id="@+id/edittext_deposer_bien_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/edittext_deposer_bien_descValue"
+        android:inputType="textMultiLine|text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textview_deposer_bien_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textview_deposer_bien_desc" />
+
+    <TextView
+        android:id="@+id/textview_deposer_bien_caracs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/textview_deposer_bien_carac"
+        android:textColor="@color/colorParagraphe"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_deposer_bien_title" />
+
+    <EditText
+        android:id="@+id/edittext_deposer_bien_carac"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/edittext_deposer_bien_carac"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textview_deposer_bien_caracs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textview_deposer_bien_caracs" />
+
+    <TextView
+        android:id="@+id/textview_deposer_bien_commune"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/textview_deposer_bien_commune"
+        android:textColor="@color/colorParagraphe"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_deposer_bien_nb_piece" />
+
+        <EditText
+            android:id="@+id/edittext_deposer_bien_ville"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="@string/edittext_deposer_bien_commune"
+            android:inputType="textPostalAddress|textCapWords"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textview_deposer_bien_commune"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textview_deposer_bien_commune" />
+
+    <TextView
+        android:id="@+id/textview_deposer_bien_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/textview_deposer_bien_code"
+        android:textColor="@color/colorParagraphe"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_deposer_bien_commune" />
+
+        <EditText
+            android:id="@+id/edittext_deposer_bien_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="@string/edittext_deposer_bien_code"
+            android:inputType="number"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textview_deposer_bien_code"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textview_deposer_bien_code" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

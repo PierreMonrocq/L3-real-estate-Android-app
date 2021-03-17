@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical"
+    tools:context=".activities.VisualisationActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textview_visualisation_caracteristiques2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/textview_visualisation_remarques"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTitre"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_visualisation_vendeur_telephone" />
+
+        <TextView
+            android:id="@+id/textview_visualisation_liste_caracteristique"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/textview_visualisation_listecaracteristiques"
+            android:textColor="@color/colorParagraphe"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_visualisation_pieces" />
+
+        <TextView
+            android:id="@+id/textview_visualisation_pieces"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/textview_visualisation_nbpieces"
+            android:textColor="@color/colorParagraphe"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_visualisation_caracteristiques" />
+
+        <TextView
+            android:id="@+id/textview_visualisation_caracteristiques"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/textview_visualisation_caracteristiques"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTitre"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_visualisation_desc" />
+
+        <TextView
+            android:id="@+id/textview_visualisation_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/textview_visualisation_description"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTitre"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_visualisation_date" />
+
+        <TextView
+            android:id="@+id/textview_visualisation_vendeur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/textview_visualisation_vendeur"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTitre"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_visualisation_liste_caracteristique" />
+
+        <TextView
+            android:id="@+id/textview_visualisation_vendeur_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="@string/textview_visualisation_vendeur_mail"
+            android:textColor="@color/colorTitre"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_visualisation_vendeur_nom" />
+
+        <TextView
+            android:id="@+id/textview_visualisation_vendeur_telephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="@string/textview_visualisation_vendeur_telephone"
+            android:textColor="@color/colorTitre"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_visualisation_vendeur_mail" />
+
+        <TextView
+            android:id="@+id/textview_visualisation_vendeur_nom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="@string/textview_visualisation_vendeur_nom"
+            android:textColor="@color/colorTitre"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_visualisation_vendeur" />
+
+        <TextView
+            android:id="@+id/textview_visualisation_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="@string/textview_visualisation_date"
+            android:textColor="@color/colorSousTitre"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/carouselView" />
+
+        <TextView
+            android:id="@+id/textview_visualisation_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/textview_visualisation_desc"
+            android:textColor="@color/colorParagraphe"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_visualisation_description" />
+
+        <TextView
+            android:id="@+id/textview_visualisation_ville"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/textview_visualisation_ville"
+            android:textColor="@color/colorSousTitre"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_titre" />
+
+        <TextView
+            android:id="@+id/textview_visualisation_prix"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/textview_visualisation_prix"
+            android:textColor="@color/colorPrix"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_visualisation_ville" />
+
+        <com.synnapps.carouselview.CarouselView
+            android:id="@+id/carouselView"
+            android:layout_width="0dp"
+            android:layout_height="216dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:visibility="visible"
+            android:background="@drawable/border"
+            app:pageTransformInterval="1000"
+            app:indicatorMarginVertical="2dp"
+            app:disableAutoPlayOnUserInteraction="true"
+            app:fillColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_visualisation_prix"
+            app:pageColor="#00000000"
+            app:radius="4dp"
+            app:slideInterval="5000"
+            app:strokeColor="#FFFFFF"
+            app:strokeWidth="1dp" />
+
+        <TextView
+            android:id="@+id/textview_titre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/textview_visualisation_titre"
+            android:textAlignment="center"
+            android:textColor="@color/colorTitre"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/imageview_visualisation_sauvegarde"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="8dp"
+            android:onClick="sauvegarderActivity"
+            app:layout_constraintBottom_toTopOf="@+id/carouselView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/baseline_favorite_border_black_18dp" />
+
+        <EditText
+            android:id="@+id/textedit_visualisation_remarques"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:ems="10"
+            android:hint="@string/textview_visualisation_remarques"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:theme="@style/EditTextTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_visualisation_caracteristiques2" />
+
+        <Button
+            android:id="@+id/button_visualisation_ajouter"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorPrimary"
+            android:elevation="3dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="ajouterCommentaire"
+            android:text="@string/textview_visualisation_bouton_ajouter"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textedit_visualisation_remarques"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

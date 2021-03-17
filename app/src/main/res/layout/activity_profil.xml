@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProfilActivity">
+
+    <TextView
+        android:id="@+id/textview_profil_nom"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/textview_favoris_nom"
+        android:textColor="@color/colorParagraphe"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_profil_donnees" />
+
+    <TextView
+        android:id="@+id/textview_favoris_prenom_valeur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textview_profil_prenom"
+        app:layout_constraintTop_toTopOf="@+id/textview_profil_prenom" />
+
+    <TextView
+        android:id="@+id/textview_favoris_email_valeur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textview_profil_email"
+        app:layout_constraintTop_toTopOf="@+id/textview_profil_email" />
+
+    <TextView
+        android:id="@+id/textview_favoris_telephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textview_profil_telephone"
+        app:layout_constraintTop_toTopOf="@+id/textview_profil_telephone" />
+
+    <TextView
+        android:id="@+id/textview_profil_telephone"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="24dp"
+        android:text="@string/textview_favoris_telephone"
+        android:textColor="@color/colorParagraphe"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_profil_email" />
+
+    <TextView
+        android:id="@+id/textview_profil_annonces"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/textview_favoris"
+        android:textAlignment="center"
+        android:textColor="@color/colorTitre"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_profil_telephone" />
+
+    <TextView
+        android:id="@+id/textview_profil_donnees"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/textview_favoris_profil"
+        android:textAlignment="center"
+        android:textColor="@color/colorTitre"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_profil_prenom"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="24dp"
+        android:text="@string/textview_favoris_prenom"
+        android:textColor="@color/colorParagraphe"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_profil_nom" />
+
+    <TextView
+        android:id="@+id/textview_profil_email"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="24dp"
+        android:text="@string/textview_favoris_email"
+        android:textColor="@color/colorParagraphe"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_profil_prenom" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_profil"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_profil_annonces" />
+
+    <ImageView
+        android:id="@+id/imageview_profil_icone"
+        android:layout_width="47dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="editerInformation"
+        android:src="@drawable/pencil"
+        app:layout_constraintBottom_toBottomOf="@+id/textview_profil_donnees"
+        app:layout_constraintEnd_toEndOf="@+id/textview_profil_donnees"
+        app:layout_constraintTop_toTopOf="@+id/textview_profil_donnees" />
+
+    <TextView
+        android:id="@+id/textview_favoris_nom_valeur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textview_profil_nom"
+        app:layout_constraintTop_toTopOf="@+id/textview_profil_nom" />
+
+</android.support.constraint.ConstraintLayout>

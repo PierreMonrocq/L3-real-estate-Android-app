@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Application de ventes immobilières</string>
+
+    <!--activity_main-->
+    <string name="button_main_hasard">Bien immobilier du jour</string>
+    <string name="button_main_deposer">Déposer un bien</string>
+    <string name="button_main_lister">Liste des annonces</string>
+    <string name="button_main_profil">Mon profil</string>
+
+    <string name="textview_main_recente">Annonces récentes</string>
+    <string name="textview_main_bienvenue">Bienvenue</string>
+    <string name="textview_main_commencer">Commencer</string>
+    <string name="textview_main_indiquer">Renseignez vos informations personnelles ci-dessous</string>
+
+    <!--activity_visualisation & activity_detail-->
+    <string name="textview_visualisation_titre">Titre</string>
+    <string name="imageview_visualisation_desc">Image Description</string>
+    <string name="textview_visualisation_prix">Prix</string>
+    <string name="textview_visualisation_ville">Ville</string>
+    <string name="textview_visualisation_desc">Description</string>
+    <string name="textview_visualisation_date">Publiée le</string>
+    <string name="string_confirmer_suppr">Confirmer la suppression</string>
+    <string name="string_confirmer_suppr_message">Vos remarques seront supprimées si vous enlevez cette annonce de vos favoris.</string>
+
+    <string name="textview_visualisation_vendeur">Contacter le Vendeur:</string>
+    <string name="textview_visualisation_description">Description</string>
+    <string name="textview_visualisation_remarques">Remarques</string>
+    <string name="textview_visualisation_bouton_ajouter">Ajouter</string>
+    <string name="textview_visualisation_vendeur_nom">Vendeur</string>
+    <string name="textview_visualisation_vendeur_mail">Mail</string>
+    <string name="textview_visualisation_vendeur_telephone">Telephone</string>
+    <string name="textview_visualisation_caracteristiques">Caractéristiques:</string>
+    <string name="textview_visualisation_listecaracteristiques">Liste caractéristique</string>
+    <string name="textview_visualisation_nbpieces">Pièces</string>
+
+    <!--activity_favoris & activity_dialog-->
+    <string name="textview_favoris_profil">Données personnelles</string>
+    <string name="textview_favoris">Annonces sauvegardées</string>
+    <string name="textview_favoris_nom">Nom: </string>
+    <string name="textview_favoris_nom_valeur">Nom </string>
+    <string name="textview_favoris_prenom">Prenom: </string>
+    <string name="textview_favoris_prenom_valeur">Prenom </string>
+    <string name="textview_favoris_email">Email: </string>
+    <string name="textview_favoris_email_valeur">Email </string>
+    <string name="textview_favoris_telephone">Telephone: </string>
+    <string name="textview_favoris_telephone_valeur">Telephone </string>
+    <string name="string_dialog_modification">Modifier les données personnelles</string>
+
+    <!-- autres-->
+    <string name="string_annuler">Annuler</string>
+    <string name="string_sauvegarder">Sauvegarder</string>
+    <string name="string_valider">Valider</string>
+    <string name="string_annonce_sauvegardee">Annonce sauvegardée !</string>
+    <string name="string_annonce_supprimee">Annonce supprimée !</string>
+    <string name="string_tab_profil">Profil</string>
+    <string name="string_tab_annonces">Annonces</string>
+    <string name="string_erreur_connexion">Aucune connexion à internet.</string>
+    <string name="string_erreur_saisie">Erreur de saisie</string>
+    <string name="string_erreur_email">Adresse mail non valide</string>
+    <string name="string_erreur_telephone">Numéro de téléphone non valide</string>
+    <string name="string_champ_obligatoire">Information requise</string>
+    <string name="string_erreur_saisie_incomplete">Merci de saisir toutes les informations.</string>
+    <string name="textview_desc">Application réalisée par Jimmy, Jérôme, Aymen, Pierre</string>
+
+    <!--activity_deposer_bien-->
+    <string name="textview_deposer_bien_type">Type de bien :</string>
+    <string name="textview_deposer_bien_titre">Déposer un bien</string>
+    <string name="textview_deposer_bien_nb_piece">Nombre de pièces* :</string>
+    <string name="edittext_deposer_bien_nbpiecehint">e.g 3</string>
+    <string name="edittext_deposer_bien_printhint">e.g. 50000</string>
+    <string name="textview_deposer_bien_prix">Prix* :</string>
+    <string name="textview_deposer_bien_ajouterphoto">Ajouter une photo du bien</string>
+    <string name="button_deposer_bien_confirmAdd">Ajouter le bien</string>
+    <string name="deposer_bien_title">Titre du bien* :</string>
+    <string name="edit_text_deposer_bien">Titre...</string>
+    <string name="textview_deposer_bien_desc">Description :</string>
+    <string name="edittext_deposer_bien_descValue">Entrez une description du bien...</string>
+    <string name="textview_deposer_bien_carac">Caractéristiques :</string>
+    <string name="textview_deposer_bien_commune">Commune* :</string>
+    <string name="edittext_deposer_bien_commune">e.g. Caen</string>
+    <string name="textview_deposer_bien_code">Code postal* :</string>
+    <string name="edittext_deposer_bien_code">e.g. 14000</string>
+    <string name="edittext_deposer_bien_carac">e.g. piscine, garage</string>
+
+
+</resources>
